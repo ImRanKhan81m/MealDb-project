@@ -1,3 +1,4 @@
+
 document.getElementById('error-message').style.display = 'none';
 const searchFood = () => {
     const searchField = document.getElementById('search-field');
@@ -18,11 +19,11 @@ const searchFood = () => {
             .catch(error => displayError(error));
     }
 }
-
+ 
 const displayError = error => {
     document.getElementById('error-message').style.display = 'block';
 }
-
+  
 const displaySearchResult = meals => {
     const searchResult = document.getElementById('search-result');
     searchResult.textContent = '';
@@ -73,7 +74,7 @@ const displayMealDetail = meal => {
     
 }
 
-
+  
 
 
 
